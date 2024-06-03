@@ -7,5 +7,7 @@ const router = express.Router();
 
 router.post("/registration", postUser);
 router.post("/login", loginPost);
-router.get("/getusers", verifyJwt, getUsers);
+router.get("/getusers", 
+// verifyJwt, 
+getUsers);
 module.exports = router;
