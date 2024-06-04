@@ -14,6 +14,7 @@ app.get("/" , (req, res) => {
 });
 
 app.use("/user" , require('./user/route'))
+app.use("/products", require("./products/route"))
 
 app.listen(`${port}` , ()  => {
     console.log(`Server is listening on localhost:${port}`);
