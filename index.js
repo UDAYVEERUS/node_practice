@@ -13,9 +13,11 @@ app.get("/" , (req, res) => {
     res.send("Hello World");
 });
 
-app.use("/user" , require('./user/route'))
-app.use("/products", require("./products/route"))
+app.use("/user" , require('./user/route'));
+app.use("/products", require("./products/route"));
+app.use("/category", require("./category/route"));
 
 app.listen(`${port}` , ()  => {
     console.log(`Server is listening on localhost:${port}`);
 })
+
